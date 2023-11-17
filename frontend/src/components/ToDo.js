@@ -15,7 +15,7 @@ function Todo() {
   // Fetch tasks from database
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:3001/getTodoList")
+      .get("https://grocery-list-server7.onrender.com/")
       .then((result) => {
         setTodoList(result.data);
       })
