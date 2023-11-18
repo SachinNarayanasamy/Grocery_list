@@ -75,7 +75,7 @@ function Todo() {
 
     // Updating edited data to the database through updateById API
     axios
-      .post("http://127.0.0.1:3001/updateTodoList/" + id, editedData)
+      .post("https://127.0.0.1:3001/updateTodoList/" + id, editedData)
       .then((result) => {
         console.log(result);
         setEditableId(null);
